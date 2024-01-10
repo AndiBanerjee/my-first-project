@@ -11,7 +11,7 @@ public class Engineer extends Employee{
 	}
 	@Override
 	public String toString() {
-		return String.format("\nHere are the employee details:\nEmployee id: %s\nEmployee first name: %s\nLast name: %s\nGender: %s\nEmail: %s\nAge: %d\nDistrict: %s\nstreet name: %s\ncity: %s\nPincode: %d\nLandmark: \nskill: %s\nProject: %s\nRole: %s",super.Id,super.getfirstName(),super.getlastName(),super.getgender(),super.getEmail(),super.getage(),A.getDistrict(),A.getstreetName(),A.getCity(),A.getpinCode(),A.getlandMark(),this.skill,this.project,this.role);
+		return super.toString()+String.format(" \nskill: %s\nProject: %s\nRole: %s",super.Id,super.getfirstName(),super.getlastName(),super.getgender(),super.getEmail(),super.getage(),A.getDistrict(),A.getstreetName(),A.getCity(),A.getpinCode(),A.getlandMark(),this.skill,this.project,this.role);
 	}
 	
 	
