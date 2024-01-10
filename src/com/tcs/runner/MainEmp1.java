@@ -7,6 +7,7 @@ public class MainEmp1 {
 	public static void main(String[] args) {
 		Scanner sc=new Scanner(System.in);
 		int k1,k2,size,i ;
+		
 	//	System.out.println("Enter the storage size");
 	//	size=sc.nextInt();
 	//	InputDataUtil IP=new InputDataUtil(sc,size);
@@ -15,8 +16,10 @@ public class MainEmp1 {
 		//i=IP.getLength();
 		String s;
 		Engineer Eg=new Engineer("AB00292","Anindita","Banerjee","F","aninditaban96@gmail.com",28,A,"Java","Citi","Developmet");
-		Eg.toString();
-		System.out.println("Engineer details"+Eg);
+		s=Eg.toString();
+		//System.out.println("Engineer details"+Eg);
+		
+		System.out.println(s);
 		//Employee EM = null;
 		//String EFN,ELN,s;
 		//Address Add[]=null;

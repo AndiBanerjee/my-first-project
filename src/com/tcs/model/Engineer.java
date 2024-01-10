@@ -2,6 +2,7 @@ package com.tcs.model;
 
 public class Engineer extends Employee{
 	String skill,project,role;
+	String print;
 	public Engineer(String Id,String firstName,String lastName,String gender,String email,int age,Address A,String skill,String project,String role) {
 		super(Id,firstName,lastName,gender,email,age,A);
 		this.skill=skill;
@@ -10,8 +11,10 @@ public class Engineer extends Employee{
 	}
 	@Override
 	public String toString() {
-		return super.toString()+"\nEngineer's Skill"+this.skill+"\nProject"+this.project+"\nRole"+this.role;
+		return String.format("\nHere are the employee details:\nEmployee id: %s\nEmployee first name: %s\nLast name: %s\nGender: %s\nEmail: %s\nAge: %d\nDistrict: %s\nstreet name: %s\ncity: %s\nPincode: %d\nLandmark: \nskill: %s\nProject: %s\nRole: %s",super.Id,super.getfirstName(),super.getlastName(),super.getgender(),super.getEmail(),super.getage(),A.getDistrict(),A.getstreetName(),A.getCity(),A.getpinCode(),A.getlandMark(),this.skill,this.project,this.role);
 	}
+	
+	
 	//String.format()
 	public void setSkill(String skill) {
 		this.skill=skill;
