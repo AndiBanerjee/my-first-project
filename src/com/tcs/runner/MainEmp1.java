@@ -10,7 +10,7 @@ public class MainEmp1 {
 	//	System.out.println("Enter the storage size");
 	//	size=sc.nextInt();
 	//	InputDataUtil IP=new InputDataUtil(sc,size);
-		Employee E[] = IP.getEmp();
+//		Employee E[] = IP.getEmp();
 		Address A=new Address("Hooghly","Sarat Bose","Kolkata",700035,"near Kali mandir");
 		//i=IP.getLength();
 		String s;
